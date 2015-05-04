@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="fd31b4fe-30cf-4ee0-8265-b7ef99b6c6ea" Version="1.0" Language="en-US" Publisher="Workbooster GmbH, Switzerland" />
-    <DisplayName>InterfaceBooster.VisualStudioExtension</DisplayName>
-    <Description>Contains some templates for creating Interface Booster Plugins</Description>
+    <DisplayName>Interface Booster Plugin API Extension</DisplayName>
+    <Description xml:space="preserve">Contains some templates for creating Plugins for Interface Booster</Description>
     <MoreInfo>http://www.interfacebooster.com</MoreInfo>
     <Icon>Resources\Package.ico</Icon>
     <Tags>Interface Booster, Provider Plugins, Library Plugins, Interface Booster Extension</Tags>
