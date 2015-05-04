@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Interface Booster - Provider Plugin</Name>
+    <Description>Is used to create an Interface Booster Provider Plugin (class library)</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Interface Booster - Provider Plugin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Interface Booster - Provider Plugin - Monochrom Icon 48x48.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ProviderPluginTemplate.csproj" File="ProviderPluginTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="plugin.xml">plugin.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ProviderPlugin.cs">ProviderPlugin.cs</ProjectItem>
+      
+      <Folder Name="lib" TargetFolderName="lib">
+        <ProjectItem ReplaceParameters="false" TargetFileName="InterfaceBooster.ProviderPluginApi.dll">InterfaceBooster.ProviderPluginApi.dll</ProjectItem>
+      </Folder>
+      
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      
+      <Folder Name="V1" TargetFolderName="V1">
+        <Folder Name="Endpoints" TargetFolderName="Endpoints">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExampleEndpoint.cs">ExampleEndpoint.cs</ProjectItem>
+        </Folder>
+        
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProviderConnection.cs">ProviderConnection.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProviderPluginInstance.cs">ProviderPluginInstance.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

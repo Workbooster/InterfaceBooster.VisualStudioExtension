@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProviderPlugin id="$guid2$">
+  <Name>Your Provider Plugin Name</Name>
+  <Description>Your Description.</Description>
+  <Assemblies>
+    <Assembly path='$safeprojectname$.dll' requiredInterfaceVersion="1.0.1">
+      <Instances>
+        <Instance id="$guid1$">
+          <Name>Your Instance Name (e.g. with Version)</Name>
+          <Description>Your Description.</Description>
+        </Instance>
+      </Instances>
+    </Assembly>
+  </Assemblies>
+</ProviderPlugin>
